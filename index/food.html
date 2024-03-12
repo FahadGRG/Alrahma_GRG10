@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Food Site</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+
+       *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:'poppins', sans-serif;
+            list-style: none;
+            text-decoration: none;
+        }
+        body {
+            height: 100%;
+            width: 100%;
+            min-height: 100vh;
+            background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #090979 35%, #020024  100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow flex items to wrap */
+        }
+
+        .food-card {
+            height: 600px;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            width: calc(50% - 1rem); /* Adjust width to fit two cards in a row with margin */
+            margin: 0.5rem;
+            background: transparent;
+        }
+
+        .food-card:nth-child(odd) {
+            clear: both; /* Clear floats to start a new row */
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .food-image {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        
+        h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color:#676bdb ;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #f8e5e5cb;
+            line-height: 1.6rem;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        header{
+           position: fixed;
+           right: 0;
+           top: 0;
+           z-index: 1000;
+           width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           padding: 33px 9%;
+           background: transparent;
+       }
+.logo{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+        .navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 70px;
+    font-size: 20px;
+    font-weight: 600px;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 6px solid white;
+    
+}
+.scroll-down{
+    position:absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down{
+    position: fixed
+}
+.scroll-down i{
+display: block;
+padding: 12px;
+font-size: 25px;
+color: white;
+background: radial-gradient(circle, #00d5ff 0%, #00d4ff 100%);
+border-radius: 30px;
+transition: all .50s ease;
+}
+.scroll-down i:hover{
+    transform:translateY(-15px); 
+}
+        @media (min-width: 501px) {
+            .food-card {
+                width: calc(33.33% - 1rem); /* Adjust width to fit three cards in a row with margin */
+            }
+
+            .food-card:nth-child(odd) {
+                clear: none; /* Clear floats for the normal layout */
+            }
+        }
+        @media (max-width:1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0px 3%;
+        transition: .2s;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: .2s; 
+    }
+}
+    </style>
+</head>
+<body>  
+<header>
+   <a href="#" class="logo">Travels</a>
+<ul class="navlist">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="About Places I've Traveled.html">About Places I've Traveled</a></li>
+    <li><a href="food.html">Food</a></li>
+    <li><a href="Best Time to Visit.html">Best Time to Visit</a></li>
+    <li><a href="About Me.html">About Me</a></li>
+    <li><a href="login.html">Login</a></li>
+</ul>
+</header>
+    <div class="food-card">
+        <img class="food-image" src="pexels-jonathan-borba-19247559.jpg" alt="Food 1">
+        <h2><h2>CheeseBurger and French Fries</h2></h2>
+        <p><b><b>A cheeseburger is a hamburger with cheese added. 
+             Hamburgers are sandwiches typically made with ground meat, usually beef, in a bun or on a bread roll. 
+            French fries are thin, usually deep-fried strips of potato.</b></b></p>
+    </div>
+    <div class="food-card">
+        <img class="food-image" src="pexels-alberta-studios-9650083.jpg" alt="Food 2">
+        <h2><h2>Nachos</h2></h2>
+        <p>It consists of tortilla chips layered with melted cheese, bacon, and possibly other toppings. Nachos are a type of appetizer or snack originating in Mexican cuisine. They are typically made with corn tortilla chips, melted cheese, and jalapenos. Other common toppings include beans, salsa, sour cream, guacamole, and ground beef.</p>
+    </div>
+    <div class="food-card">
+        <img class="food-image" src="pexels-natasha-filippovskaya-4394612.jpg" alt="Food 3">
+        <h2><h2>Pizza</h2></h2>
+        <p>It is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven.</p>
+    </div>
+    <div class="food-card">
+        <img class="food-image" src="pexels-sergio-medina-7339302.jpg" alt="Food 4">
+        <h2><h2>French Fries With Ketchup And Mayonnaise.</h2></h2>
+        <p>French Fries are a type of potato that is cut into strips and then fried in oil. French fries are a popular side dish and snack food. They are often served with ketchup, mayonnaise, or other dipping sauces.</p>
+    </div>
+    <div class="food-card">
+        <img class="food-image" src="pexels-razane-adra-13304044.jpg" alt="Food 5">
+        <h2><h2> Lamb Chops</h2></h2>
+        <p> Lamb Chops are slices of meat cut from the rib section of a lamb. Lamb chops are a popular dish that can be grilled, baked, or pan-fried. They are often seasoned with herbs and spices before cooking.</p>
+    </div>
+    <div class="food-card">
+        <img class="food-image" src="pexels-valeria-boltneva-8862711.jpg" alt="Food 6" class="food_6">
+        <h2><h2>Shish Kebabs</h2></h2>
+        <p>They are a type of skewered and grilled meat dish originating in  Middle Eastern cuisine . Shish kebabs are typically made from cubed or ground meat,  marinated and cooked on skewers over charcoal or open flame. The type of meat used can vary,  including lamb, beef, chicken or even seafood.</p>
+    </div>
+    <div class="scroll-down">
+        <a href="#"><i class="ri-arrow-drop-down-fill"></i></a>
+    </div>
+</body>
+</html>
